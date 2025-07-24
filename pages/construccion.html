@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construcción | Ferretería Cuscatlán Empresas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #1c3a64, #087e6d, #ff6f3c);
+      background-size: 600% 600%;
+      animation: moverFondo 10s ease infinite;
+      color: #1f2d3d;
+    }
+
+    @keyframes moverFondo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    h1 span {
+      color: #ffb700;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .tarjeta {
+      width: 320px;
+      background: #f7f9fc;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-6px);
+    }
+
+    .icono {
+      font-size: 32px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    .titulo-tarjeta {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1f2d3d;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: left;
+      color: #3a3a3a;
+    }
+
+    .tarjeta ul li::before {
+      content: "✔ ";
+      color: #0db37e;
+    }
+
+    .boton {
+      background-color: #5a6f84;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: default;
+    }
+
+    .ventajas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 50px 20px;
+      background: #f9fafc;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .ventaja {
+      flex: 1 1 250px;
+      text-align: center;
+      padding: 20px;
+      max-width: 300px;
+    }
+
+    .ventaja h3 {
+      margin: 10px 0;
+      color: #1f2d3d;
+    }
+
+    .ventaja p {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Construye <span>El Salvador</span></h1>
+  <p class="subtitle">Materiales de primera calidad para proyectos residenciales, comerciales e industriales</p>
+
+  <section class="contenedor">
+    <div class="tarjeta" style="background-color: #31435f; color: white;">
+      <div class="icono">&#x26A0;</div>
+      <div class="titulo-tarjeta">Cemento y Agregados</div>
+      <ul>
+        <li>Cemento Portland Lafarge</li>
+        <li>Arena lavada y piedra picada</li>
+        <li>Grava clasificada</li>
+        <li>Cal hidratada</li>
+      </ul>
+      <button class="boton">Ver Agregados</button>
+    </div>
+
+    <div class="tarjeta">
+      <div class="icono">&#x1F3F0;</div>
+      <div class="titulo-tarjeta">Hierro y Acero</div>
+      <ul>
+        <li>Cabillas 3/8", 1/2", 5/8"</li>
+        <li>Alambre de amarre</li>
+        <li>Perfiles estructurales</li>
+        <li>Mallas electrosoldadas</li>
+      </ul>
+      <button class="boton" style="background-color: #ff5c33;">Ver Estructuras</button>
+    </div>
+
+    <div class="tarjeta">
+      <div class="icono">&#x1F3E2;</div>
+      <div class="titulo-tarjeta">Blocks y Ladrillos</div>
+      <ul>
+        <li>Blocks de 15x20x40</li>
+        <li>Ladrillos caravista</li>
+        <li>Bloques decorativos</li>
+        <li>Tejas y coberturas</li>
+      </ul>
+      <button class="boton" style="background-color: #1c3a64;">Ver Mampostería</button>
+    </div>
+  </section>
+
+  <section class="ventajas">
+    <div class="ventaja">
+      <div class="icono">&#x1F69A;</div>
+      <h3>Entrega en Obra</h3>
+      <p>Llevamos los materiales directamente a tu proyecto</p>
+    </div>
+    <div class="ventaja">
+      <div class="icono">&#x1F4C8;</div>
+      <h3>Cálculo de Materiales</h3>
+      <p>Te ayudamos a calcular exactamente lo que necesitas</p>
+    </div>
+    <div class="ventaja">
+      <div class="icono">&#x2796;</div>
+      <h3>Descuentos por Volumen</h3>
+      <p>Mejores precios para proyectos grandes</p>
+    </div>
+  </section>
+</body>
+</html>

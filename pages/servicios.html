@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios - Ferretería Cuscatlán Empresas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #0f9b8e, #ec6f66, #004e92);
+      background-size: 600% 600%;
+      animation: backgroundShift 10s ease infinite;
+      color: #1e2b4a;
+    }
+
+    @keyframes backgroundShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .section-subtitle {
+      color: #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .card {
+      background: #ffffffee;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1e2b4a;
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    .card ul li::before {
+      content: '✔';
+      color: #06c;
+      margin-right: 8px;
+    }
+
+    .process-section {
+      background: #f3f6f9;
+      padding: 3rem 1rem;
+      border-radius: 20px;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .step {
+      text-align: center;
+    }
+
+    .step-number {
+      background: #ff6b35;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="section-subtitle">
+      🔧 SERVICIOS TÉCNICOS
+    </p>
+    <h1 class="section-title">
+      Más que <span style="color: #ff9900;">Productos</span>
+    </h1>
+    <p class="section-subtitle">
+      Servicios profesionales para potenciar tus proyectos de construcción e industria
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">👤</div>
+        <div class="card-title">Asesoría Técnica</div>
+        <ul>
+          <li>Proyectos especializados</li>
+          <li>Cálculos estructurales</li>
+          <li>Diseño industrial</li>
+          <li>Optimización de costos</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <div class="card-title">Instalaciones</div>
+        <ul>
+          <li>Sistemas eléctricos industriales</li>
+          <li>Plomería especializada</li>
+          <li>Estructuras metálicas</li>
+          <li>Sistemas de seguridad</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <div class="card-title">Mantenimiento</div>
+        <ul>
+          <li>Equipos industriales</li>
+          <li>Herramientas especializadas</li>
+          <li>Calibración de instrumentos</li>
+          <li>Reparaciones técnicas</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <div class="card-title">Capacitación Técnica</div>
+        <ul>
+          <li>Uso correcto de herramientas</li>
+          <li>Normas de seguridad industrial</li>
+          <li>Técnicas de soldadura</li>
+          <li>Certificaciones laborales</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">📅</div>
+        <div class="card-title">Alquiler de Equipos</div>
+        <ul>
+          <li>Maquinaria pesada</li>
+          <li>Andamios y torres</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔑</div>
+        <div class="card-title">Proyectos Llave en Mano</div>
+        <ul>
+          <li>Diseño y construcción</li>
+          <li>Suministro de materiales</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="process-section">
+      <h2>Proceso de Servicio BDV Empresas</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <strong>Evaluación Técnica</strong>
+          <p>Analizamos tus necesidades específicas del proyecto</p>
+        </div>
+        <div class="step">
+          <div class="step-number" style="background:#00b67a;">2</div>
+          <strong>Propuesta Técnica</strong>
+          <p>Diseñamos la solución óptima con presupuesto detallado</p>
+        </div>
+        <div class="step">
+          <div class="step-number" style="background:#1e2b4a;">3</div>
+          <strong>Ejecución Profesional</strong>
+          <p>Implementamos con estándares de calidad internacional</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <strong>Soporte Continuo</strong>
+          <p>Garantizamos el funcionamiento óptimo a largo plazo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
